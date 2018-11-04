@@ -1,0 +1,27 @@
+name: flutter_auth_buttons
+description: Buttons for authenticating with social networks
+version: 0.0.1
+author: Duncan Jones <duncan@wortharead.com>
+homepage: https://github.com/dmjones/flutter_auth_buttons
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  assets:
+    - packages/flutter_auth_buttons/graphics/google-logo.png
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 500
