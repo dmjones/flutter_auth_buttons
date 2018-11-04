@@ -18,6 +18,9 @@ Dark button:
 
 ![Google dark button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/google-dark.png)
 
+### Facebook
+
+![Facebook button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/facebook.png)
 
 
 ## Usage

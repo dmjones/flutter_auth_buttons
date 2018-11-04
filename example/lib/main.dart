@@ -12,14 +12,30 @@ class MyApp extends StatelessWidget {
       title: 'Button Demo',
       home: Scaffold(
         body: Center(
-          child: IntrinsicWidth(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Flexible(child: GoogleSignInButton(onPressed: () {})),
-                GoogleSignInButton(onPressed: () {}, darkMode: true),
-              ],
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // Add within rows to show natural size
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  GoogleSignInButton(onPressed: () {}),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  GoogleSignInButton(onPressed: () {}, darkMode: true),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  FacebookSignInButton(onPressed: () {}),
+                ],
+              ),
+            ],
           ),
         ),
       ),
