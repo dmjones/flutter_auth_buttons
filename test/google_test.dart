@@ -55,4 +55,48 @@ void main() {
 
     expect(find.text(suppliedText), findsOneWidget);
   });
+
+  testWidgets('Check dark mode works', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Material(
+          child: GoogleSignInButton(
+            onPressed: () {},
+            darkMode: true,
+          ),
+        ),
+      ),
+    );
+
+    expect(find.byType(RaisedButton), findsOneWidget);
+
+    var button =
+        find.byType(RaisedButton).evaluate().toList()[0].widget as RaisedButton;
+    expect(button.color, Color(0xFF4285F4));
+
+    var text = find.byType(Text).evaluate().toList()[0].widget as Text;
+    expect(text.style.color, Colors.white);
+  });
+
+  testWidgets('Check light mode works', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Material(
+          child: GoogleSignInButton(
+            onPressed: () {},
+          ),
+        ),
+      ),
+    );
+
+    expect(find.byType(RaisedButton), findsOneWidget);
+
+    var button =
+        find.byType(RaisedButton).evaluate().toList()[0].widget as RaisedButton;
+
+    expect(button.color, Colors.white);
+
+    var text = find.byType(Text).evaluate().toList()[0].widget as Text;
+    expect(text.style.color, Colors.black.withOpacity(0.54));
+  });
 }
