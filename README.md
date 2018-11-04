@@ -2,12 +2,23 @@
 
 Flutter widget library containing buttons for authenticating with popular social networks.
 
-Supported buttons:
-
-- Google
-
-Note: these buttons do not contain authentication logic. They are designed to be used with authentication packages, 
+These buttons do not contain authentication logic. They are designed to be used with authentication packages, 
 such as [firebase_auth](https://pub.dartlang.org/packages/firebase_auth).
+
+## Supported buttons
+
+### Google
+
+Light button:
+
+![Google light button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/google-light.png)
+
+
+Dark button:
+
+![Google dark button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/google-dark.png)
+
+
 
 ## Usage
 
