@@ -30,6 +30,7 @@ class GoogleSignInButton extends StatelessWidget {
         onPressed: onPressed,
         color: darkMode ? Color(0xFF4285F4) : Colors.white,
         child: Row(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             // The Google design guidelines aren't consistent. The dark mode
             // seems to have a perfect square of white around the logo, with a
@@ -42,7 +43,6 @@ class GoogleSignInButton extends StatelessWidget {
             // logo, which doesn't allow us to center the image (given the 10dp
             // above). Something needs to give - either the 8dp is wrong or the
             // 40dp should be 36dp. I've opted to increase left padding to 10dp.
-
             Padding(
               padding: const EdgeInsets.all(1.0),
               child: Container(

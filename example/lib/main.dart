@@ -15,26 +15,9 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              // Add within rows to show natural size
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GoogleSignInButton(onPressed: () {}),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GoogleSignInButton(onPressed: () {}, darkMode: true),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  FacebookSignInButton(onPressed: () {}),
-                ],
-              ),
+              GoogleSignInButton(onPressed: () {}),
+              GoogleSignInButton(onPressed: () {}, darkMode: true),
+              FacebookSignInButton(onPressed: () {}),
             ],
           ),
         ),

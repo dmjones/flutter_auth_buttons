@@ -26,6 +26,7 @@ class FacebookSignInButton extends StatelessWidget {
         onPressed: onPressed,
         color: Color(0xFF4267B2),
         child: Row(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             // Facebook doesn't provide strict sizes, so this is a good
             // estimate of their examples within documentation.

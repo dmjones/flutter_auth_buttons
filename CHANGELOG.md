@@ -1,3 +1,7 @@
+## [0.2.1]
+
+* Fix bug to prevent buttons from stretching.
+
 ## [0.2.0]
 
 * Added Facebook button.
