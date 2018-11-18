@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 /// A sign in button that matches Twitter's look and feel.
+///
+/// The button text can be overridden, however the default text is recommended
+/// in order to be compliant with the design guidelines and to maximise
+/// conversion.
 class TwitterSignInButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;

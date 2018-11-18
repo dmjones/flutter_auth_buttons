@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 /// A sign in button that matches Google's design guidelines.
+///
+/// The button text can be overridden, however the default text is recommended
+/// in order to be compliant with the design guidelines and to maximise
+/// conversion.
 class GoogleSignInButton extends StatelessWidget {
   final String text;
   final bool darkMode;
