@@ -1,3 +1,7 @@
+## [0.3.1]
+
+* Improved package description.
+
 ## [0.3.0]
 
 * Added Twitter button.
