@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
               GoogleSignInButton(onPressed: () {}),
               GoogleSignInButton(onPressed: () {}, darkMode: true),
               FacebookSignInButton(onPressed: () {}),
+              TwitterSignInButton(onPressed: () {}),
             ],
           ),
         ),

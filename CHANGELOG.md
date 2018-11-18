@@ -1,3 +1,7 @@
+## [0.3.0]
+
+* Added Twitter button.
+
 ## [0.2.1]
 
 * Fix bug to prevent buttons from stretching.

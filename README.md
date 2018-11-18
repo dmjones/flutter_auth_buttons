@@ -38,6 +38,14 @@ match the example given in their documentation.
 
 ![Facebook button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/facebook.png)
 
+### Twitter
+
+Like Facebook, Twitter doesn't prescribe a precise button (see 
+[here](https://developer.twitter.com/en/docs/twitter-for-websites/log-in-with-twitter/guides/sign-in-with-twitter-resources)).
+This button was designed to match the colours and style used in their example images.
+
+![Twitter button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/twitter.png)
+
 
 ## Usage
 
