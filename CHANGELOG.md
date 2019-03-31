@@ -1,3 +1,7 @@
+## [0.4.0]
+
+* Include Github and Instagram buttons.
+
 ## [0.3.1]
 
 * Improved package description.
