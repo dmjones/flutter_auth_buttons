@@ -1,6 +1,6 @@
 name: flutter_auth_buttons
 description: Material buttons for logging into popular social networks, including Google, Facebook and Twitter.
-version: 0.3.1
+version: 0.4.0
 author: Duncan Jones <duncan@wortharead.com>
 homepage: https://github.com/dmjones/flutter_auth_buttons
 
@@ -21,6 +21,10 @@ flutter:
     - packages/flutter_auth_buttons/graphics/google-logo.png
     - packages/flutter_auth_buttons/graphics/flogo-HexRBG-Wht-100.png
     - packages/flutter_auth_buttons/graphics/Twitter_Logo_Blue.png
+    - packages/flutter_auth_buttons/graphics/Instagram_Logo_Dark.png
+    - packages/flutter_auth_buttons/graphics/Instagram_Logo_Light.png
+    - packages/flutter_auth_buttons/graphics/Github_Logo_Dark.png
+    - packages/flutter_auth_buttons/graphics/Github_Logo_Light.png
 
   fonts:
     - family: Roboto
