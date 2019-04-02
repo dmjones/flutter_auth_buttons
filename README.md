@@ -18,13 +18,15 @@ Screenshots of the supported buttons are shown below.
 
 ### Github
 
-Github doesn't appear to provide a button guidlines (see 
+Github does not appear to provide a button guidelines (see 
 [here](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#non-web-application-flow)).
-This button was designed to match the colours and style used in their example images.
 
 Light button:
+
 ![Github button screenshot](https://user-images.githubusercontent.com/32497443/55409742-93ebb500-5530-11e9-9287-73ccdda9ce32.png)
+
 Dark button:
+
 ![githubDark](https://user-images.githubusercontent.com/32497443/55412826-1f1b7980-5536-11e9-8061-2cd124df870c.png)
 
 ### Google
@@ -51,9 +53,8 @@ match the example given in their documentation.
 
 ### Instagram
 
-Instgram doesn't have a precise button as well (see 
+Instagram authentication make no mention of button guidelines (see 
 [here](https://www.instagram.com/developer/authentication/)).
-This button was designed to match the colours and style used in their example images.
 
 Light Button:
 

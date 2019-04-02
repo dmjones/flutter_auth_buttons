@@ -1,8 +1,11 @@
+## [0.4.1+1]
+
+* Corrected README.md.
+
 ## [0.4.1]
 
 * Instagram Colors.black.
 * Updated README.md.
-
 
 ## [0.4.0]
 
