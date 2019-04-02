@@ -16,6 +16,17 @@ GoogleSignInButton(onPressed: () {
 
 Screenshots of the supported buttons are shown below.
 
+### Github
+
+Github doesn't appear to provide a button guidlines (see 
+[here](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#non-web-application-flow)).
+This button was designed to match the colours and style used in their example images.
+
+Light button:
+![Github button screenshot](https://user-images.githubusercontent.com/32497443/55409742-93ebb500-5530-11e9-9287-73ccdda9ce32.png)
+Dark button:
+![githubDark](https://user-images.githubusercontent.com/32497443/55412826-1f1b7980-5536-11e9-8061-2cd124df870c.png)
+
 ### Google
 
 Google suggests two default button styles on it's 
@@ -38,6 +49,20 @@ match the example given in their documentation.
 
 ![Facebook button screenshot](https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/facebook.png)
 
+### Instagram
+
+Instgram doesn't have a precise button as well (see 
+[here](https://www.instagram.com/developer/authentication/)).
+This button was designed to match the colours and style used in their example images.
+
+Light Button:
+
+![Instagram button screenshot](https://user-images.githubusercontent.com/32497443/55409750-98b06900-5530-11e9-8b38-4e811a347cfc.png)
+
+Dark Button:
+
+![Instagram button screenshot](https://user-images.githubusercontent.com/32497443/55412835-23479700-5536-11e9-8aa2-580e27a6076d.png)
+
 ### Twitter
 
 Like Facebook, Twitter doesn't prescribe a precise button (see 
@@ -56,5 +81,3 @@ import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 ```
 
 See the documentation for API details.
-
-

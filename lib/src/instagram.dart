@@ -46,7 +46,7 @@ class InstagramSignInButton extends StatelessWidget {
                   fontFamily: "Roboto",
                   fontWeight: FontWeight.w500,
                   color:
-                      darkMode ? Colors.white : Colors.black,
+                      Colors.black,
                 ),
               ),
             ),
