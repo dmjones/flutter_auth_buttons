@@ -17,9 +17,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color.fromARGB(0xFF, 0xF0, 0xF0, 0xF0),
         body: Center(
           child: Padding(
-            padding: const EdgeInsets.all(60.0),
+            padding: const EdgeInsets.only(top: 60.0),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 GoogleSignInButton(onPressed: () {}),
                 GoogleSignInButton(onPressed: () {}, darkMode: true),
