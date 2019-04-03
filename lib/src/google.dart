@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 class GoogleSignInButton extends StatelessWidget {
   final String text;
   final bool darkMode;
+  final double borderRadius;
   final VoidCallback onPressed;
 
   /// Creates a new button. Set [darkMode] to `true` to use the dark
@@ -17,6 +18,8 @@ class GoogleSignInButton extends StatelessWidget {
       {@required this.onPressed,
       this.text = 'Sign in with Google',
       this.darkMode = false,
+      // Google doesn't specify a border radius, but this looks about right.
+      this.borderRadius = 3.0,
       Key key})
       : assert(text != null),
         super(key: key);
@@ -27,8 +30,7 @@ class GoogleSignInButton extends StatelessWidget {
       height: 40.0,
       padding: const EdgeInsets.all(0.0),
       shape: RoundedRectangleBorder(
-        // Google doesn't specify a border radius, but this looks about right.
-        borderRadius: BorderRadius.circular(3.0),
+        borderRadius: BorderRadius.circular(this.borderRadius),
       ),
       child: RaisedButton(
         onPressed: onPressed,
@@ -54,7 +56,7 @@ class GoogleSignInButton extends StatelessWidget {
                 width: 38.0, // matches above
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(3.0),
+                  borderRadius: BorderRadius.circular(this.borderRadius),
                 ),
                 child: Center(
                   child: Image(
