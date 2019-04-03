@@ -1,3 +1,7 @@
+## [0.3.2]
+
+* Improved Google Light OnPressed to match Google's branding
+
 ## [0.3.1]
 
 * Improved package description.
