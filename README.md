@@ -2,7 +2,7 @@
 
 Flutter widget library containing buttons for authenticating with popular social networks, including Google, Facebook and Twitter.
 
-<img src="https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/example-app.png" alt="Screenshot" width="300" />
+<img src="https://raw.githubusercontent.com/dmjones/flutter_auth_buttons/master/screenshots/example-app.png" alt="Screenshot" width="250" />
 
 ## Usage
 
