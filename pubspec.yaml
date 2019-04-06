@@ -21,6 +21,7 @@ flutter:
     - packages/flutter_auth_buttons/graphics/google-logo.png
     - packages/flutter_auth_buttons/graphics/flogo-HexRBG-Wht-100.png
     - packages/flutter_auth_buttons/graphics/Twitter_Logo_Blue.png
+    - packages/flutter_auth_buttons/graphics/ms-symbollockup_mssymbol_19.png
 
   fonts:
     - family: Roboto

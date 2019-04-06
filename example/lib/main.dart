@@ -18,17 +18,19 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              Heading("Natural Size"),
+              Heading("Natural size"),
               Column(
                 children: <Widget>[
                   GoogleSignInButton(onPressed: () {}),
                   GoogleSignInButton(onPressed: () {}, darkMode: true),
                   FacebookSignInButton(onPressed: () {}),
                   TwitterSignInButton(onPressed: () {}),
+                  MicrosoftSignInButton(onPressed: () {}),
+                  MicrosoftSignInButton(onPressed: () {}, darkMode: true),
                 ],
               ),
-              SizedBox(height: 40.0),
-              Heading("Stretched by Parent"),
+              SizedBox(height: 25.0),
+              Heading("Stretched (by parent)"),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: Column(
@@ -38,6 +40,8 @@ class MyApp extends StatelessWidget {
                     GoogleSignInButton(onPressed: () {}, darkMode: true),
                     FacebookSignInButton(onPressed: () {}),
                     TwitterSignInButton(onPressed: () {}),
+                    MicrosoftSignInButton(onPressed: () {}),
+                    MicrosoftSignInButton(onPressed: () {}, darkMode: true),
                   ],
                 ),
               ),
@@ -57,11 +61,11 @@ class Heading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+      padding: const EdgeInsets.only(top: 12.0, bottom: 12.0),
       child: Text(
         text,
         style: TextStyle(
-          fontSize: 22.0,
+          fontSize: 18.0,
           fontWeight: FontWeight.bold,
         ),
       ),
