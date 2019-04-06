@@ -15,7 +15,7 @@ class FacebookSignInButton extends StatelessWidget {
   /// which apparently results in higher conversion. 'Login with Facebook' is
   /// another suggestion.
   FacebookSignInButton({
-    @required this.onPressed,
+    this.onPressed,
     this.borderRadius = defaultBorderRadius,
     this.text = 'Continue with Facebook',
     Key key,

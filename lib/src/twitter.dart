@@ -13,7 +13,7 @@ class TwitterSignInButton extends StatelessWidget {
 
   /// Creates a new button. The default button text is 'Sign in with Twitter'.
   TwitterSignInButton({
-    @required this.onPressed,
+    this.onPressed,
     this.borderRadius = defaultBorderRadius,
     this.text = 'Sign in with Twitter',
     Key key,

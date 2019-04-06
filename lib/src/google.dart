@@ -16,7 +16,7 @@ class GoogleSignInButton extends StatelessWidget {
   /// blue background variant with white text, otherwise an all-white background
   /// with dark text is used.
   GoogleSignInButton(
-      {@required this.onPressed,
+      {this.onPressed,
       this.text = 'Sign in with Google',
       this.darkMode = false,
       // Google doesn't specify a border radius, but this looks about right.

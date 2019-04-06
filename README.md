@@ -12,7 +12,8 @@ Add `flutter_auth_buttons` to your `pubspec.yaml`, then import the Dart file:
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 ```
 
-Use the `onPressed` attribute to capture the button press and call your authentication logic within that.
+Use the `onPressed` attribute to capture the button press and call your authentication logic within that. To disable
+the button, pass `null` or omit the attribute.
 
 ```dart
 FacebookSignInButton(onPressed: () {
@@ -26,6 +27,15 @@ Some buttons have a dark mode. Enable this with the optional parameter:
 GoogleSignInButton(
   onPressed: () {/* ... */}, 
   darkMode: true, // default: false
+)
+```
+
+You can adjust the border-radius of the buttons:
+
+```dart
+TwitterSignInButton(
+  onPressed: () {},
+  borderRadius: 10.0,
 )
 ```
 
