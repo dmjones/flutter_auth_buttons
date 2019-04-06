@@ -1,3 +1,10 @@
+## [0.4.0]
+
+* Border radius can be specified (thanks [@nerder](https://github.com/nerder)).
+* Google button shows correct background colour when pressed (thanks [@g3rrydanc3](https://github.com/g3rrydanc3)).
+* Button content left-aligns when stretched.
+* `onPressed` attribute is no longer required.
+
 ## [0.3.1]
 
 * Improved package description.
