@@ -1,3 +1,7 @@
+## [0.5.0]
+
+* Added Microsoft button.
+
 ## [0.4.0]
 
 * Border radius can be specified (thanks [@nerder](https://github.com/nerder)).
