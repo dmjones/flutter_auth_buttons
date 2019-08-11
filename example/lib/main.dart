@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
               Heading("Natural size"),
               Column(
                 children: <Widget>[
+                  AppleSignInButton(onPressed: () {}),
+                  AppleSignInButton(onPressed: () {}, darkMode: true),
                   GoogleSignInButton(onPressed: () {}),
                   GoogleSignInButton(onPressed: () {}, darkMode: true),
                   FacebookSignInButton(onPressed: () {}),
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
+                    AppleSignInButton(onPressed: () {}),
+                    AppleSignInButton(onPressed: () {}, darkMode: true),
                     GoogleSignInButton(onPressed: () {}),
                     GoogleSignInButton(onPressed: () {}, darkMode: true),
                     FacebookSignInButton(onPressed: () {}),
