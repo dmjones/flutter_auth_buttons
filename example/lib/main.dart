@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           title: Text("flutter_auth_buttons"),
         ),
         backgroundColor: Color.fromARGB(0xFF, 0xF0, 0xF0, 0xF0),
-        body: Center(
+        body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Heading("Natural size"),
