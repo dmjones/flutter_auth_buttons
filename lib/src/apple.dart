@@ -36,10 +36,10 @@ class AppleSignInButton extends StatelessWidget {
           child: Row(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 28.0),
+                padding: const EdgeInsets.only(left: 22.0, bottom: 3.0),
                 child: Container(
                   height: 38.0,
-                  width: 38.0,
+                  width: 32.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(this.borderRadius),
                   ),
@@ -49,18 +49,18 @@ class AppleSignInButton extends StatelessWidget {
                         "graphics/apple_logo_${darkMode ? "white" : "black"}.png",
                         package: "flutter_auth_buttons",
                       ),
-                      height: 16.0,
-                      width: 16.0,
+                      height: 17.0,
+                      width: 17.0,
                     ),
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0.0, 12.0, 36.0, 8.0),
+                padding: const EdgeInsets.fromLTRB(0.0, 8.0, 32.0, 8.0),
                 child: Text(
                   text,
                   style: TextStyle(
-                    fontSize: 15.0,
+                    fontSize: 16.0,
                     fontFamily: "SF Pro",
                     fontWeight: FontWeight.w500,
                     color: darkMode ? Colors.white : Colors.black,
