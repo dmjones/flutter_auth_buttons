@@ -1,3 +1,8 @@
+## [0.6.0]
+
+* Added Apple button (thanks [@json469](https://github.com/json469)).
+* Simplified the example app (removed stretched button examples).
+
 ## [0.5.0]
 
 * Added Microsoft button.

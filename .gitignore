@@ -9,3 +9,4 @@ ios/Runner/GeneratedPluginRegistrant.*
 pubspec.lock
 flutter_auth_buttons.iml
 android/
+example/ios/Flutter/flutter_export_environment.sh

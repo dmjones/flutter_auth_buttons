@@ -22,9 +22,15 @@ flutter:
     - packages/flutter_auth_buttons/graphics/flogo-HexRBG-Wht-100.png
     - packages/flutter_auth_buttons/graphics/Twitter_Logo_Blue.png
     - packages/flutter_auth_buttons/graphics/ms-symbollockup_mssymbol_19.png
+    - packages/flutter_auth_buttons/graphics/apple_logo_black.png
+    - packages/flutter_auth_buttons/graphics/apple_logo_white.png
 
   fonts:
     - family: Roboto
       fonts:
         - asset: fonts/Roboto-Medium.ttf
+          weight: 500
+    - family: SF Pro
+      fonts:
+        - asset: fonts/SF-Pro-Medium.ttf
           weight: 500
