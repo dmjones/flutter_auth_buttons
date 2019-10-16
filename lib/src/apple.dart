@@ -3,10 +3,12 @@ import 'package:flutter_auth_buttons/src/button.dart';
 
 const double defaultBorderRadius = 3.0;
 
+enum AppleButtonStyle { white, whiteOutline, black }
+
 /// A sign in button that matches Apple's design guidelines.
 class AppleSignInButton extends StatelessWidget {
   final String text;
-  final bool darkMode;
+  final AppleButtonStyle style;
   final double borderRadius;
   final VoidCallback onPressed;
 
@@ -17,7 +19,7 @@ class AppleSignInButton extends StatelessWidget {
       {this.onPressed,
       // 'Continue with Apple' is also an available variant depdening on App's sign-in experience.
       this.text = 'Sign in with Apple',
-      this.darkMode = false,
+      this.style = AppleButtonStyle.white,
       // Apple doesn't specify a border radius, but this looks about right.
       this.borderRadius = defaultBorderRadius,
       Key key})
@@ -27,8 +29,11 @@ class AppleSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StretchableButton(
-      buttonColor: darkMode ? Colors.black : Colors.white,
+      buttonColor:
+          style == AppleButtonStyle.black ? Colors.black : Colors.white,
       borderRadius: borderRadius,
+      buttonBorderColor:
+          style == AppleButtonStyle.whiteOutline ? Colors.black : null,
       onPressed: onPressed,
       buttonPadding: 0.0,
       children: <Widget>[
@@ -46,7 +51,7 @@ class AppleSignInButton extends StatelessWidget {
                   child: Center(
                     child: Image(
                       image: AssetImage(
-                        "graphics/apple_logo_${darkMode ? "white" : "black"}.png",
+                        "graphics/apple_logo_${style == AppleButtonStyle.black ? "white" : "black"}.png",
                         package: "flutter_auth_buttons",
                       ),
                       height: 17.0,
@@ -63,7 +68,9 @@ class AppleSignInButton extends StatelessWidget {
                     fontSize: 16.0,
                     fontFamily: "SF Pro",
                     fontWeight: FontWeight.w500,
-                    color: darkMode ? Colors.white : Colors.black,
+                    color: style == AppleButtonStyle.black
+                        ? Colors.white
+                        : Colors.black,
                   ),
                 ),
               ),

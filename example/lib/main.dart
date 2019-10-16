@@ -22,7 +22,10 @@ class MyApp extends StatelessWidget {
               Column(
                 children: <Widget>[
                   AppleSignInButton(onPressed: () {}),
-                  AppleSignInButton(onPressed: () {}, darkMode: true),
+                  AppleSignInButton(
+                      onPressed: () {}, style: AppleButtonStyle.whiteOutline),
+                  AppleSignInButton(
+                      onPressed: () {}, style: AppleButtonStyle.black),
                   GoogleSignInButton(onPressed: () {}),
                   GoogleSignInButton(onPressed: () {}, darkMode: true),
                   FacebookSignInButton(onPressed: () {}),
@@ -39,7 +42,10 @@ class MyApp extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     AppleSignInButton(onPressed: () {}),
-                    AppleSignInButton(onPressed: () {}, darkMode: true),
+                    AppleSignInButton(
+                        onPressed: () {}, style: AppleButtonStyle.whiteOutline),
+                    AppleSignInButton(
+                        onPressed: () {}, style: AppleButtonStyle.black),
                     GoogleSignInButton(onPressed: () {}),
                     GoogleSignInButton(onPressed: () {}, darkMode: true),
                     FacebookSignInButton(onPressed: () {}),
