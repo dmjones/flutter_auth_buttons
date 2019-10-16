@@ -8,6 +8,8 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    const padding = 25.0;
+
     return MaterialApp(
       title: 'Button Demo',
       home: Scaffold(
@@ -17,43 +19,27 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color.fromARGB(0xFF, 0xF0, 0xF0, 0xF0),
         body: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Heading("Natural size"),
               Column(
                 children: <Widget>[
+                  SizedBox(height: padding),
                   AppleSignInButton(onPressed: () {}),
                   AppleSignInButton(
                       onPressed: () {}, style: AppleButtonStyle.whiteOutline),
                   AppleSignInButton(
                       onPressed: () {}, style: AppleButtonStyle.black),
+                  SizedBox(height: padding),
                   GoogleSignInButton(onPressed: () {}),
                   GoogleSignInButton(onPressed: () {}, darkMode: true),
+                  SizedBox(height: padding),
                   FacebookSignInButton(onPressed: () {}),
+                  SizedBox(height: padding),
                   TwitterSignInButton(onPressed: () {}),
+                  SizedBox(height: padding),
                   MicrosoftSignInButton(onPressed: () {}),
                   MicrosoftSignInButton(onPressed: () {}, darkMode: true),
                 ],
-              ),
-              SizedBox(height: 25.0),
-              Heading("Stretched (by parent)"),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    AppleSignInButton(onPressed: () {}),
-                    AppleSignInButton(
-                        onPressed: () {}, style: AppleButtonStyle.whiteOutline),
-                    AppleSignInButton(
-                        onPressed: () {}, style: AppleButtonStyle.black),
-                    GoogleSignInButton(onPressed: () {}),
-                    GoogleSignInButton(onPressed: () {}, darkMode: true),
-                    FacebookSignInButton(onPressed: () {}),
-                    TwitterSignInButton(onPressed: () {}),
-                    MicrosoftSignInButton(onPressed: () {}),
-                    MicrosoftSignInButton(onPressed: () {}, darkMode: true),
-                  ],
-                ),
               ),
             ],
           ),
