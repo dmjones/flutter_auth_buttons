@@ -1,5 +1,7 @@
 # Flutter Auth Buttons
 
+[![Build Status](https://travis-ci.org/dmjones/flutter_auth_buttons.svg?branch=master)](https://travis-ci.org/dmjones/flutter_auth_buttons)
+
 Flutter widget library containing buttons for authenticating with popular social networks: Apple, Google, Facebook, Twitter
 and Microsoft.
 
