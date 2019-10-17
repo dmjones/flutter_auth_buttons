@@ -41,3 +41,9 @@ TwitterSignInButton(
 ```
 
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
+
+## Contributions
+
+Contributions are very welcome. I would recommend discussing large changes in an issue before you spend the time on them.
+
+Good quality pull requests will win you commit rights.
