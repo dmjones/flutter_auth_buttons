@@ -4,6 +4,7 @@ import 'package:flutter_auth_buttons/src/button.dart';
 /// A sign in button that matches Microsoft's design guidelines.
 class MicrosoftSignInButton extends StatelessWidget {
   final String text;
+  final TextStyle textStyle;
   final VoidCallback onPressed;
   final double borderRadius;
   final bool darkMode;
@@ -14,6 +15,7 @@ class MicrosoftSignInButton extends StatelessWidget {
     this.onPressed,
     this.borderRadius = 0.0,
     this.text = 'Sign in with Microsoft',
+    this.textStyle,
     this.darkMode = false,
     Key key,
   })  : assert(text != null),
@@ -43,7 +45,7 @@ class MicrosoftSignInButton extends StatelessWidget {
           padding: const EdgeInsets.only(left: 12.0, right: 2.0),
           child: Text(
             text,
-            style: TextStyle(
+            style: textStyle ?? TextStyle(
               // Should be Segoe 15px, but can't find that font and 15px
               // seems too small...
               fontSize: 18.0,

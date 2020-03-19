@@ -8,6 +8,7 @@ import 'package:flutter_auth_buttons/src/button.dart';
 /// conversion.
 class FacebookSignInButton extends StatelessWidget {
   final String text;
+  final TextStyle textStyle;
   final VoidCallback onPressed;
   final double borderRadius;
 
@@ -18,6 +19,7 @@ class FacebookSignInButton extends StatelessWidget {
     this.onPressed,
     this.borderRadius = defaultBorderRadius,
     this.text = 'Continue with Facebook',
+    this.textStyle,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -45,7 +47,7 @@ class FacebookSignInButton extends StatelessWidget {
           padding: const EdgeInsets.only(left: 14.0, right: 10.0),
           child: Text(
             text,
-            style: TextStyle(
+            style: textStyle ?? TextStyle(
               // default to the application font-style
               fontSize: 18.0,
               fontWeight: FontWeight.bold,
