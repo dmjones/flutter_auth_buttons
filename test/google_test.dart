@@ -100,7 +100,6 @@ void main() {
     expect(text.style.color, Colors.black.withOpacity(0.54));
   });
 
-
   testWidgets('Check default text style is used', (WidgetTester tester) async {
     var defaultTextStyle = TextStyle(fontSize: 18.0, fontFamily: "Roboto", 
       fontWeight: FontWeight.w500, color: Colors.black.withOpacity(0.54));
