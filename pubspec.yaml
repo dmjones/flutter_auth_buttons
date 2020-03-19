@@ -1,6 +1,6 @@
 name: flutter_auth_buttons
 description: Material buttons for logging into popular social networks, including Google, Facebook, Twitter and Microsoft.
-version: 0.6.0
+version: 0.7.0
 homepage: https://github.com/dmjones/flutter_auth_buttons
 
 environment:

@@ -1,3 +1,7 @@
+## [0.7.0]
+
+* Text styles can be overridden (thanks [@bitmoxy](https://github.com/bitmoxy)).
+
 ## [0.6.0]
 
 * Added Apple button (thanks [@json469](https://github.com/json469)).
