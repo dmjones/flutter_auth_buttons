@@ -42,6 +42,15 @@ TwitterSignInButton(
 )
 ```
 
+You can adjust the text style of the buttons:
+
+```dart
+TwitterSignInButton(
+  onPressed: () {},
+  textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, fontFamily: "Roboto"),
+)
+```
+
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
 
 ## Contributions

@@ -8,6 +8,7 @@ import 'package:flutter_auth_buttons/src/button.dart';
 /// conversion.
 class GoogleSignInButton extends StatelessWidget {
   final String text;
+  final TextStyle textStyle;
   final bool darkMode;
   final double borderRadius;
   final VoidCallback onPressed;
@@ -18,6 +19,7 @@ class GoogleSignInButton extends StatelessWidget {
   GoogleSignInButton(
       {this.onPressed,
       this.text = 'Sign in with Google',
+      this.textStyle,
       this.darkMode = false,
       // Google doesn't specify a border radius, but this looks about right.
       this.borderRadius = defaultBorderRadius,
@@ -71,7 +73,7 @@ class GoogleSignInButton extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
           child: Text(
             text,
-            style: TextStyle(
+            style: textStyle ?? TextStyle(
               fontSize: 18.0,
               fontFamily: "Roboto",
               fontWeight: FontWeight.w500,

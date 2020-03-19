@@ -8,6 +8,7 @@ import 'package:flutter_auth_buttons/src/button.dart';
 /// conversion.
 class TwitterSignInButton extends StatelessWidget {
   final String text;
+  final TextStyle textStyle;
   final VoidCallback onPressed;
   final double borderRadius;
 
@@ -16,6 +17,7 @@ class TwitterSignInButton extends StatelessWidget {
     this.onPressed,
     this.borderRadius = defaultBorderRadius,
     this.text = 'Sign in with Twitter',
+    this.textStyle,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -44,7 +46,7 @@ class TwitterSignInButton extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10.0),
           child: Text(
             text,
-            style: TextStyle(
+            style: textStyle ?? TextStyle(
               // default to the application font-style
               fontSize: 18.0,
               fontWeight: FontWeight.bold,
