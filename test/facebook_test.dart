@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_buttons/src/button.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
 
@@ -94,5 +95,40 @@ void main() {
 
     final FacebookSignInButton button = tester.firstWidget(find.byType(FacebookSignInButton));
     expect(button.textStyle, suppliedTextStyle);
+  });
+
+  testWidgets('Check supplied splash color is used', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Material(
+          child: FacebookSignInButton(
+            onPressed: () {},
+            splashColor: Colors.white,
+          ),
+        ),
+      ),
+    );
+
+    var button = find.byType(StretchableButton).evaluate().toList()[0].widget as StretchableButton;
+    expect(button.splashColor, Colors.white);
+  });
+
+  testWidgets('Check default splash color is used', (WidgetTester tester) async {
+    ButtonThemeData buttonTheme;
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Builder(
+          builder: (BuildContext context) {
+            buttonTheme = ButtonTheme.of(context);
+            return FacebookSignInButton(
+              onPressed: () {},
+            );
+          },
+        ),
+      ));
+
+    var button = find.byType(RaisedButton).evaluate().toList()[0].widget as RaisedButton;
+    expect(buttonTheme.getSplashColor(button), buttonTheme.getTextColor(button).withOpacity(0.12));
   });
 }

@@ -8,6 +8,7 @@ class MicrosoftSignInButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double borderRadius;
   final bool darkMode;
+  final Color splashColor;
 
   /// Creates a new button. The default button text is 'Sign in with Microsoft'.
   /// Microsoft also allows simply 'Sign in'.
@@ -17,6 +18,7 @@ class MicrosoftSignInButton extends StatelessWidget {
     this.text = 'Sign in with Microsoft',
     this.textStyle,
     this.darkMode = false,
+    this.splashColor,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -26,6 +28,7 @@ class MicrosoftSignInButton extends StatelessWidget {
     return StretchableButton(
       buttonColor: darkMode ? Color(0xFF2F2F2F) : Color(0xFFFFFFFF),
       borderRadius: borderRadius,
+      splashColor: splashColor,
       buttonBorderColor: darkMode ? null : Color(0xFF8C8C8C),
       onPressed: onPressed,
       buttonPadding: 10.0, // This is an estimate
