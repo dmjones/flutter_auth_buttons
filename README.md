@@ -51,6 +51,16 @@ TwitterSignInButton(
 )
 ```
 
+You can adjust the splash color of the buttons:
+
+```dart
+GoogleSignInButton(
+  onPressed: () {/* ... */}, 
+  splashColor: Colors.white, 
+  // setting splashColor to Colors.transparent will remove button ripple effect.
+)
+```
+
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
 
 ## Contributions

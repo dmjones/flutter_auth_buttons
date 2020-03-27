@@ -11,6 +11,7 @@ class FacebookSignInButton extends StatelessWidget {
   final TextStyle textStyle;
   final VoidCallback onPressed;
   final double borderRadius;
+  final Color splashColor;
 
   /// Creates a new button. The default button text is 'Continue with Facebook',
   /// which apparently results in higher conversion. 'Login with Facebook' is
@@ -20,6 +21,7 @@ class FacebookSignInButton extends StatelessWidget {
     this.borderRadius = defaultBorderRadius,
     this.text = 'Continue with Facebook',
     this.textStyle,
+    this.splashColor,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -29,6 +31,7 @@ class FacebookSignInButton extends StatelessWidget {
     return StretchableButton(
       buttonColor: Color(0xFF4267B2),
       borderRadius: borderRadius,
+      splashColor: splashColor,
       onPressed: onPressed,
       buttonPadding: 8.0,
       children: <Widget>[

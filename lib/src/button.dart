@@ -6,7 +6,7 @@ class StretchableButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double borderRadius;
   final double buttonPadding;
-  final Color buttonColor;
+  final Color buttonColor, splashColor;
   final Color buttonBorderColor;
   final List<Widget> children;
 
@@ -14,6 +14,7 @@ class StretchableButton extends StatelessWidget {
     @required this.buttonColor,
     @required this.borderRadius,
     @required this.children,
+    this.splashColor,
     this.buttonBorderColor,
     this.onPressed,
     this.buttonPadding,
@@ -50,6 +51,7 @@ class StretchableButton extends StatelessWidget {
           child: RaisedButton(
             onPressed: onPressed,
             color: buttonColor,
+            splashColor: splashColor,
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: contents,

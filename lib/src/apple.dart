@@ -12,6 +12,7 @@ class AppleSignInButton extends StatelessWidget {
   final double borderRadius;
   final VoidCallback onPressed;
   final TextStyle textStyle;
+  final Color splashColor;
 
   /// Creates a new button. Set [darkMode] to `true` to use the dark
   /// black background variant with white text, otherwise an all-white background
@@ -21,6 +22,7 @@ class AppleSignInButton extends StatelessWidget {
       // 'Continue with Apple' is also an available variant depdening on App's sign-in experience.
       this.text = 'Sign in with Apple',
       this.textStyle,
+      this.splashColor,
       this.style = AppleButtonStyle.white,
       // Apple doesn't specify a border radius, but this looks about right.
       this.borderRadius = defaultBorderRadius,
@@ -34,6 +36,7 @@ class AppleSignInButton extends StatelessWidget {
       buttonColor:
           style == AppleButtonStyle.black ? Colors.black : Colors.white,
       borderRadius: borderRadius,
+      splashColor: splashColor,
       buttonBorderColor:
           style == AppleButtonStyle.whiteOutline ? Colors.black : null,
       onPressed: onPressed,

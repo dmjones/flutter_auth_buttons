@@ -11,6 +11,7 @@ class TwitterSignInButton extends StatelessWidget {
   final TextStyle textStyle;
   final VoidCallback onPressed;
   final double borderRadius;
+  final Color splashColor;
 
   /// Creates a new button. The default button text is 'Sign in with Twitter'.
   TwitterSignInButton({
@@ -18,6 +19,7 @@ class TwitterSignInButton extends StatelessWidget {
     this.borderRadius = defaultBorderRadius,
     this.text = 'Sign in with Twitter',
     this.textStyle,
+    this.splashColor,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -27,6 +29,7 @@ class TwitterSignInButton extends StatelessWidget {
     return StretchableButton(
       buttonColor: Color(0xFFE7E7E7),
       borderRadius: borderRadius,
+      splashColor: splashColor,
       onPressed: onPressed,
       buttonBorderColor: Color(0xFFCCCCCC),
       buttonPadding: 0.0,
