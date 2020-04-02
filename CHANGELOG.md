@@ -1,3 +1,7 @@
+## [0.8.0]
+
+* Button splash color can be set (thanks [@bitmoxy](https://github.com/bitmoxy)).
+
 ## [0.7.0]
 
 * Text styles can be overridden (thanks [@bitmoxy](https://github.com/bitmoxy)).
