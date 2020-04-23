@@ -3,3 +3,4 @@ export 'src/google.dart';
 export 'src/microsoft.dart';
 export 'src/twitter.dart';
 export 'src/apple.dart';
+export 'src/instagram.dart';

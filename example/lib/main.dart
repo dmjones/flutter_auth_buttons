@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
                   SizedBox(height: padding),
                   MicrosoftSignInButton(onPressed: () {}),
                   MicrosoftSignInButton(onPressed: () {}, darkMode: true),
+                  InstagramSignInButton(onPressed: (){}),
                 ],
               ),
             ],
