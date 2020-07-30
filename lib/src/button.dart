@@ -9,6 +9,7 @@ class StretchableButton extends StatelessWidget {
   final Color buttonColor, splashColor;
   final Color buttonBorderColor;
   final List<Widget> children;
+  final bool expanded;
 
   StretchableButton({
     @required this.buttonColor,
@@ -18,6 +19,7 @@ class StretchableButton extends StatelessWidget {
     this.buttonBorderColor,
     this.onPressed,
     this.buttonPadding,
+    this.expanded=false,
   });
 
   @override
@@ -53,7 +55,7 @@ class StretchableButton extends StatelessWidget {
             color: buttonColor,
             splashColor: splashColor,
             child: Row(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
               children: contents,
             ),
           ),

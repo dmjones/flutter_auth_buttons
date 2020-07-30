@@ -13,6 +13,7 @@ class GoogleSignInButton extends StatelessWidget {
   final double borderRadius;
   final VoidCallback onPressed;
   final Color splashColor;
+  final bool expanded;
 
   /// Creates a new button. Set [darkMode] to `true` to use the dark
   /// blue background variant with white text, otherwise an all-white background
@@ -23,6 +24,7 @@ class GoogleSignInButton extends StatelessWidget {
       this.textStyle,
       this.splashColor,
       this.darkMode = false,
+      this.expanded = false,
       // Google doesn't specify a border radius, but this looks about right.
       this.borderRadius = defaultBorderRadius,
       Key key})
@@ -36,6 +38,7 @@ class GoogleSignInButton extends StatelessWidget {
       borderRadius: borderRadius,
       splashColor: splashColor,
       onPressed: onPressed,
+      expanded: expanded,
       buttonPadding: 0.0,
       children: <Widget>[
         // The Google design guidelines aren't consistent. The dark mode
