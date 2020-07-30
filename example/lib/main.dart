@@ -18,30 +18,29 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(0xFF, 0xF0, 0xF0, 0xF0),
         body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  SizedBox(height: padding),
-                  AppleSignInButton(onPressed: () {}),
-                  AppleSignInButton(
-                      onPressed: () {}, style: AppleButtonStyle.whiteOutline),
-                  AppleSignInButton(
-                      onPressed: () {}, style: AppleButtonStyle.black),
-                  SizedBox(height: padding),
-                  GoogleSignInButton(onPressed: () {}),
-                  GoogleSignInButton(onPressed: () {}, darkMode: true),
-                  SizedBox(height: padding),
-                  FacebookSignInButton(onPressed: () {}),
-                  SizedBox(height: padding),
-                  TwitterSignInButton(onPressed: () {}),
-                  SizedBox(height: padding),
-                  MicrosoftSignInButton(onPressed: () {}),
-                  MicrosoftSignInButton(onPressed: () {}, darkMode: true),
-                ],
-              ),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                SizedBox(height: padding),
+                AppleSignInButton(expanded: true, onPressed: () {}),
+                AppleSignInButton(expanded: true,
+                    onPressed: () {}, style: AppleButtonStyle.whiteOutline),
+                AppleSignInButton(expanded: true,
+                    onPressed: () {}, style: AppleButtonStyle.black),
+                SizedBox(height: padding),
+                GoogleSignInButton(expanded: true, onPressed: () {}),
+                GoogleSignInButton(expanded: true, onPressed: () {}, darkMode: true),
+                SizedBox(height: padding),
+                FacebookSignInButton(expanded: true, onPressed: () {}),
+                SizedBox(height: padding),
+                TwitterSignInButton(expanded: true, onPressed: () {}),
+                SizedBox(height: padding),
+                MicrosoftSignInButton(expanded: true, onPressed: () {}),
+                MicrosoftSignInButton(expanded: true, onPressed: () {}, darkMode: true),
+              ],
+            ),
           ),
         ),
       ),
