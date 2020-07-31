@@ -76,12 +76,14 @@ class GoogleSignInButton extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
           child: Text(
             text,
-            style: textStyle ?? TextStyle(
-              fontSize: 18.0,
-              fontFamily: "Roboto",
-              fontWeight: FontWeight.w500,
-              color: darkMode ? Colors.white : Colors.black.withOpacity(0.54),
-            ),
+            style: textStyle ??
+                TextStyle(
+                  fontSize: 18.0,
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w500,
+                  color:
+                      darkMode ? Colors.white : Colors.black.withOpacity(0.54),
+                ),
           ),
         ),
       ],
