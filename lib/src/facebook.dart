@@ -29,7 +29,7 @@ class FacebookSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StretchableButton(
-      buttonColor: Color(0xFF4267B2),
+      buttonColor: Color(0xFF1877F2),
       borderRadius: borderRadius,
       splashColor: splashColor,
       onPressed: onPressed,
@@ -47,15 +47,16 @@ class FacebookSignInButton extends StatelessWidget {
           width: 24.0,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 14.0, right: 10.0),
+          padding: const EdgeInsets.only(left: 6.0, right: 10.0),
           child: Text(
             text,
-            style: textStyle ?? TextStyle(
-              // default to the application font-style
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+            style: textStyle ??
+                TextStyle(
+                  // default to the application font-style
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
           ),
         ),
       ],
