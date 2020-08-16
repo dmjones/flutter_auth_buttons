@@ -39,6 +39,18 @@ class MyApp extends StatelessWidget {
                   SizedBox(height: padding),
                   MicrosoftSignInButton(onPressed: () {}),
                   MicrosoftSignInButton(onPressed: () {}, darkMode: true),
+                  SizedBox(height: padding),
+                  GithubSignInButton(
+                    onPressed: () {},
+                  ),
+                  GithubSignInButton(
+                    onPressed: () {},
+                    style: GithubButtonStyle.white,
+                  ),
+                  GithubSignInButton(
+                    onPressed: () {},
+                    style: GithubButtonStyle.whiteOutline,
+                  )
                 ],
               ),
             ],

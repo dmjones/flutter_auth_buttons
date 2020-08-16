@@ -28,7 +28,7 @@ Some buttons have a dark mode. Enable this with the optional parameter:
 
 ```dart
 GoogleSignInButton(
-  onPressed: () {/* ... */}, 
+  onPressed: () {/* ... */},
   darkMode: true, // default: false
 )
 ```
@@ -55,10 +55,18 @@ You can adjust the splash color of the buttons:
 
 ```dart
 GoogleSignInButton(
-  onPressed: () {/* ... */}, 
-  splashColor: Colors.white, 
+  onPressed: () {/* ... */},
+  splashColor: Colors.white,
   // setting splashColor to Colors.transparent will remove button ripple effect.
 )
+```
+
+```dart
+GithubSignInButton(
+  onPressed: () {},
+  // setting style to GithubButtonstyle.white will set the color of     button to white, by default style will be dark [Color(0xff24292e)].
+  style: GithubButtonStyle.white
+),
 ```
 
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
