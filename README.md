@@ -61,10 +61,14 @@ GoogleSignInButton(
 )
 ```
 
+You can adjust the style of the buttons:
+
 ```dart
 GithubSignInButton(
   onPressed: () {},
-  // setting style to GithubButtonstyle.white will set the color of     button to white, by default style will be dark [Color(0xff24292e)].
+  // setting style to GithubButtonstyle.white will set the
+  // color of button to white, by default
+  // style will be dark [Color(0xff24292e)].
   style: GithubButtonStyle.white
 ),
 ```
