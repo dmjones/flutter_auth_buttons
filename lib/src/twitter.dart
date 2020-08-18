@@ -12,6 +12,7 @@ class TwitterSignInButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double borderRadius;
   final Color splashColor;
+  final bool contentsCentered;
 
   /// Creates a new button. The default button text is 'Sign in with Twitter'.
   TwitterSignInButton({
@@ -20,6 +21,7 @@ class TwitterSignInButton extends StatelessWidget {
     this.text = 'Sign in with Twitter',
     this.textStyle,
     this.splashColor,
+    this.contentsCentered = false,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -33,6 +35,7 @@ class TwitterSignInButton extends StatelessWidget {
       onPressed: onPressed,
       buttonBorderColor: Color(0xFFCCCCCC),
       buttonPadding: 0.0,
+      contentsCentered: contentsCentered,
       children: <Widget>[
         // Facebook doesn't provide strict sizes, so this is a good
         // estimate of their examples within documentation.

@@ -13,6 +13,7 @@ class AppleSignInButton extends StatelessWidget {
   final VoidCallback onPressed;
   final TextStyle textStyle;
   final Color splashColor;
+  final bool contentsCentered;
 
   /// Creates a new button. Set [darkMode] to `true` to use the dark
   /// black background variant with white text, otherwise an all-white background
@@ -26,6 +27,7 @@ class AppleSignInButton extends StatelessWidget {
       this.style = AppleButtonStyle.white,
       // Apple doesn't specify a border radius, but this looks about right.
       this.borderRadius = defaultBorderRadius,
+      this.contentsCentered = false,
       Key key})
       : assert(text != null),
         super(key: key);
@@ -41,6 +43,7 @@ class AppleSignInButton extends StatelessWidget {
           style == AppleButtonStyle.whiteOutline ? Colors.black : null,
       onPressed: onPressed,
       buttonPadding: 0.0,
+      contentsCentered: contentsCentered,
       children: <Widget>[
         Center(
           child: Row(
