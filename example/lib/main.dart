@@ -49,23 +49,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class Heading extends StatelessWidget {
-  final String text;
-
-  Heading(this.text);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 12.0, bottom: 12.0),
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: 18.0,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    );
-  }
-}

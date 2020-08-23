@@ -102,8 +102,11 @@ void main() {
   });
 
   testWidgets('Check default text style is used', (WidgetTester tester) async {
-    var defaultTextStyle = TextStyle(fontSize: 18.0, fontFamily: "Roboto", 
-      fontWeight: FontWeight.w500, color: Colors.black.withOpacity(0.54));
+    var defaultTextStyle = TextStyle(
+        fontSize: 18.0,
+        fontFamily: "Roboto",
+        fontWeight: FontWeight.w500,
+        color: Colors.black.withOpacity(0.54));
 
     await tester.pumpWidget(
       MaterialApp(
@@ -122,7 +125,11 @@ void main() {
   });
 
   testWidgets('Check supplied text style is used', (WidgetTester tester) async {
-    const suppliedTextStyle = TextStyle(color: Color(0xff000000), fontSize: 20, fontWeight: FontWeight.w700, fontFamily: "Roboto");
+    const suppliedTextStyle = TextStyle(
+        color: Color(0xff000000),
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        fontFamily: "Roboto");
     var buttonKey = UniqueKey();
 
     await tester.pumpWidget(
@@ -137,11 +144,13 @@ void main() {
       ),
     );
 
-    final GoogleSignInButton button = tester.firstWidget(find.byType(GoogleSignInButton));
+    final GoogleSignInButton button =
+        tester.firstWidget(find.byType(GoogleSignInButton));
     expect(button.textStyle, suppliedTextStyle);
   });
 
-  testWidgets('Check supplied splash color is used', (WidgetTester tester) async {
+  testWidgets('Check supplied splash color is used',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
         home: Material(
@@ -153,26 +162,29 @@ void main() {
       ),
     );
 
-    var button = find.byType(StretchableButton).evaluate().toList()[0].widget as StretchableButton;
+    var button = find.byType(StretchableButton).evaluate().toList()[0].widget
+        as StretchableButton;
     expect(button.splashColor, Colors.white);
   });
 
-  testWidgets('Check default splash color is used', (WidgetTester tester) async {
+  testWidgets('Check default splash color is used',
+      (WidgetTester tester) async {
     ButtonThemeData buttonTheme;
 
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Builder(
-          builder: (BuildContext context) {
-            buttonTheme = ButtonTheme.of(context);
-            return GoogleSignInButton(
-              onPressed: () {},
-            );
-          },
-        ),
-      ));
+    await tester.pumpWidget(MaterialApp(
+      home: Builder(
+        builder: (BuildContext context) {
+          buttonTheme = ButtonTheme.of(context);
+          return GoogleSignInButton(
+            onPressed: () {},
+          );
+        },
+      ),
+    ));
 
-    var button = find.byType(RaisedButton).evaluate().toList()[0].widget as RaisedButton;
-    expect(buttonTheme.getSplashColor(button), buttonTheme.getTextColor(button).withOpacity(0.12));
+    var button =
+        find.byType(RaisedButton).evaluate().toList()[0].widget as RaisedButton;
+    expect(buttonTheme.getSplashColor(button),
+        buttonTheme.getTextColor(button).withOpacity(0.12));
   });
 }

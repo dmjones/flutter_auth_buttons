@@ -48,13 +48,14 @@ class MicrosoftSignInButton extends StatelessWidget {
           padding: const EdgeInsets.only(left: 12.0, right: 2.0),
           child: Text(
             text,
-            style: textStyle ?? TextStyle(
-              // Should be Segoe 15px, but can't find that font and 15px
-              // seems too small...
-              fontSize: 18.0,
-              fontWeight: FontWeight.w600,
-              color: darkMode ? Colors.white : Color(0xFF5E5E5E),
-            ),
+            style: textStyle ??
+                TextStyle(
+                  // Should be Segoe 15px, but can't find that font and 15px
+                  // seems too small...
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                  color: darkMode ? Colors.white : Color(0xFF5E5E5E),
+                ),
           ),
         ),
       ],

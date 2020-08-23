@@ -49,12 +49,13 @@ class TwitterSignInButton extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10.0),
           child: Text(
             text,
-            style: textStyle ?? TextStyle(
-              // default to the application font-style
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFF555555),
-            ),
+            style: textStyle ??
+                TextStyle(
+                  // default to the application font-style
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF555555),
+                ),
           ),
         ),
       ],

@@ -1,3 +1,7 @@
+## [0.9.0]
+
+* Updated Facebook button (thanks [@chetan-cueclad](https://github.com/chetan-cueclad)).
+
 ## [0.8.0]
 
 * Button splash color can be set (thanks [@bitmoxy](https://github.com/bitmoxy)).
