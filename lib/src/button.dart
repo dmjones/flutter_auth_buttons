@@ -9,7 +9,7 @@ class StretchableButton extends StatelessWidget {
   final Color buttonColor, splashColor;
   final Color buttonBorderColor;
   final List<Widget> children;
-  final bool contentsCentered;
+  final bool centered;
 
   StretchableButton({
     @required this.buttonColor,
@@ -19,7 +19,7 @@ class StretchableButton extends StatelessWidget {
     this.buttonBorderColor,
     this.onPressed,
     this.buttonPadding,
-    this.contentsCentered = false,
+    this.centered = false,
   });
 
   @override
@@ -31,7 +31,7 @@ class StretchableButton extends StatelessWidget {
         if (constraints.minWidth == 0) {
           contents.add(SizedBox.shrink());
         } else {
-          if (contentsCentered) {
+          if (centered) {
             contents.insert(0, Spacer());
           }
           contents.add(Spacer());
