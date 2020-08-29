@@ -12,6 +12,7 @@ class FacebookSignInButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double borderRadius;
   final Color splashColor;
+  final bool centered;
 
   /// Creates a new button. The default button text is 'Continue with Facebook',
   /// which apparently results in higher conversion. 'Login with Facebook' is
@@ -22,6 +23,7 @@ class FacebookSignInButton extends StatelessWidget {
     this.text = 'Continue with Facebook',
     this.textStyle,
     this.splashColor,
+    this.centered = false,
     Key key,
   })  : assert(text != null),
         super(key: key);
@@ -34,6 +36,7 @@ class FacebookSignInButton extends StatelessWidget {
       splashColor: splashColor,
       onPressed: onPressed,
       buttonPadding: 8.0,
+      centered: centered,
       children: <Widget>[
         // Facebook doesn't provide strict sizes, so this is a good
         // estimate of their examples within documentation.

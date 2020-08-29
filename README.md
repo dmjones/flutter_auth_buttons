@@ -61,6 +61,17 @@ GoogleSignInButton(
 )
 ```
 
+Buttons can be stretched like normal Material buttons. By default the button
+contents are left-aligned when stretched. You can choose to center the icon and
+text using the `centered` property.
+
+```dart
+TwitterSignInButton(
+  onPressed: () {},
+  centered: true,
+)
+```
+
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
 
 ## Contributions
