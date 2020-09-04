@@ -1,3 +1,7 @@
+## [0.10.0]
+
+* Support for centered buttons (thanks [@Jwildsmith](https://github.com/Jwildsmith)).
+
 ## [0.9.0]
 
 * Updated Facebook button (thanks [@chetan-cueclad](https://github.com/chetan-cueclad)).
