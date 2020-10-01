@@ -104,7 +104,7 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Material(
-          child: TwitterSignInButton(
+          child: MicrosoftSignInButton(
             onPressed: () {},
             splashColor: Colors.white,
           ),
@@ -125,7 +125,7 @@ void main() {
       home: Builder(
         builder: (BuildContext context) {
           buttonTheme = ButtonTheme.of(context);
-          return TwitterSignInButton(
+          return MicrosoftSignInButton(
             onPressed: () {},
           );
         },
