@@ -62,8 +62,8 @@ class AppleSignInButton extends StatelessWidget {
                         "graphics/apple_logo_${style == AppleButtonStyle.black ? "white" : "black"}.png",
                         package: "flutter_auth_buttons",
                       ),
-                      height: 17.0,
-                      width: 17.0,
+                      height: 24.0,
+                      width: 24.0,
                     ),
                   ),
                 ),
@@ -74,7 +74,7 @@ class AppleSignInButton extends StatelessWidget {
                   text,
                   style: textStyle ??
                       TextStyle(
-                        fontSize: 16.0,
+                        fontSize: 18.0,
                         fontFamily: "SF Pro",
                         fontWeight: FontWeight.w500,
                         color: style == AppleButtonStyle.black
