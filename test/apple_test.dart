@@ -94,9 +94,9 @@ void main() {
       ),
     );
 
-    final AppleSignInButton microsoftSignInButton =
+    final AppleSignInButton appleSignInButton =
         tester.firstWidget(find.byType(AppleSignInButton));
-    expect(microsoftSignInButton.textStyle, providedTextStyle);
+    expect(appleSignInButton.textStyle, providedTextStyle);
   });
 
   testWidgets('Check supplied splash color is used',
@@ -147,9 +147,9 @@ void main() {
         ),
       ),
     );
-    final AppleSignInButton microsoftSignInButton =
+    final AppleSignInButton appleSignInButton =
         tester.firstWidget(find.byType(AppleSignInButton));
-    expect(microsoftSignInButton.style, AppleButtonStyle.white);
+    expect(appleSignInButton.style, AppleButtonStyle.white);
   });
 
   testWidgets('Check the provided AppleButtonStyle option is used',
@@ -166,9 +166,9 @@ void main() {
       ),
     );
 
-    final AppleSignInButton microsoftSignInButton =
+    final AppleSignInButton appleSignInButton =
         tester.firstWidget(find.byType(AppleSignInButton));
-    expect(microsoftSignInButton.style, appleButtonStyle);
+    expect(appleSignInButton.style, appleButtonStyle);
   });
 
   testWidgets('Check the default border radius of the button is used',
@@ -180,14 +180,14 @@ void main() {
         ),
       ),
     );
-    final AppleSignInButton microsoftSignInButton =
+    final AppleSignInButton appleSignInButton =
         tester.firstWidget(find.byType(AppleSignInButton));
-    expect(microsoftSignInButton.borderRadius, 3.0);
+    expect(appleSignInButton.borderRadius, 3.0);
   });
 
   testWidgets('Check the provided border radius of the button is used',
       (WidgetTester tester) async {
-    var microsoftButtonKey = UniqueKey();
+    var appleButtonKey = UniqueKey();
 
     var borderRadius = 20.0;
 
@@ -195,15 +195,15 @@ void main() {
       MaterialApp(
         home: Material(
           child: AppleSignInButton(
-            key: microsoftButtonKey,
+            key: appleButtonKey,
             borderRadius: borderRadius,
           ),
         ),
       ),
     );
 
-    final AppleSignInButton microsoftSignInButton =
+    final AppleSignInButton appleSignInButton =
         tester.firstWidget(find.byType(AppleSignInButton));
-    expect(microsoftSignInButton.borderRadius, borderRadius);
+    expect(appleSignInButton.borderRadius, borderRadius);
   });
 }
